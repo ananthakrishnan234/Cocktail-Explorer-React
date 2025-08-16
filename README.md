@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Cocktail Explorer (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React JavaScript REST-API Bootstrap License
 
-## Available Scripts
+A modern and interactive Cocktail Explorer frontend built with React.  
+It allows users to browse a wide variety of cocktails, search by name or category, and view detailed recipes with ingredients and instructions.  
+Perfect for learning React fundamentals, API integration, component-based design, and responsive UI development.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
+- **Browse Cocktails** – Explore a wide range of cocktails fetched from an external API.  
+- **Search Functionality** – Find cocktails by name, ingredient, or category.  
+- **Detailed View** – Get ingredients, measurements, and preparation steps for each cocktail.  
+- **Responsive Design** – Built with Bootstrap for a mobile-friendly experience.  
+- **Reusable Components** – Modular React components for scalability.  
+- **Extensible** – Can be expanded with favorites, user ratings, or custom mocktails.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
+```
+Cocktail-Explorer-React/
+│
+├── public/                 # Static files (index.html, favicon, etc.)
+├── src/
+│   ├── components/         # Reusable UI Components
+│   │   ├── Navbar.js       # Top navigation bar
+│   │   ├── SearchBar.js    # Search input
+│   │   ├── CocktailCard.js # Card layout for cocktails
+│   │   └── CocktailList.js # List rendering of cocktails
+│   ├── pages/              # Page-level components
+│   │   ├── Home.js         # Homepage with featured cocktails
+│   │   └── Details.js      # Cocktail details page
+│   ├── App.js              # Main app entry
+│   ├── index.js            # ReactDOM render
+│   └── styles/             # CSS / Bootstrap overrides
+│
+├── package.json            # Dependencies & scripts
+├── README.md
+└── .gitignore
+```
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup Instructions
 
-### `npm run build`
+### 1 Clone the Repository
+```bash
+git clone https://github.com/ananthakrishnan234/Cocktail-Explorer-React.git
+cd Cocktail-Explorer-React
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2 Install Dependencies
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3 Start the Development Server
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app will run on **http://localhost:3000/**  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Example User Flow
+1. Open the app → See featured cocktails.  
+2. Use the **search bar** → Find “Margarita”.  
+3. Click on a cocktail → View **ingredients** and **instructions**.  
+4. Explore more → Navigate through categories.  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
+- React 18  
+- JavaScript (ES6+)  
+- Bootstrap 5  
+- Axios (for API calls)  
+- React Router DOM  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## License
+This project is licensed under the MIT License – see the LICENSE file for details.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+**Ananthakrishnan Sudhakaran**  
+📧 Email: [ananthakrishnans234@gmail.com](mailto:ananthakrishnans234@gmail.com)  
+💼 GitHub: [ananthakrishnan234](https://github.com/ananthakrishnan234)  
+💼 LinkedIn: [Ananthakrishnan Sudhakaran](https://www.linkedin.com/in/ananthakrishnan-sudhakaran)  
