@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home';
+import NavBar from './Components/NavBar';
+import NoMatch from './Components/NoMatch';
+import Drinks from './Pages/Drinks';
+import ProductDetail from './Pages/ProductDetail';
+import SearchByCategory from './Pages/SearchByCategory';
+import RandomDrink from './Pages/RandomDrink';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <NavBar/>
+    <Routes>
+      <Route path='/' element={<Home/>}></Route>
+      <Route path='/drinks' element={<Drinks/>}></Route>
+      <Route path='/search' element={<SearchByCategory/>}></Route>
+      <Route path='/random' element={<RandomDrink/>}></Route>
+      <Route path='/drinks/:id' element={<ProductDetail/>}></Route>
+      <Route path='*' element={<NoMatch/>}></Route>
+    </Routes>
+    </>
+
+    
+    
+     
+    
+   
   );
 }
 

@@ -1,0 +1,43 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cocktail-img {
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border: 20px solid #203050;  /* fixed typo */
+  border-radius: 5px;
+}
+
+.cocktail-infos .row {
+  margin: 10px 0;
+}
+
+.cocktail-infos .row .label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.drink {
+  margin-top: 20px;
+}
+
+.container .btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #708090;
+  color: #fff;
+  cursor: pointer;   /* fixed 'pointers' typo */
+  transition: background 0.3s ease;
+}
+
+.container .btn:hover {
+  background: #0097e6;
+}
