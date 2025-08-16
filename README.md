@@ -1,4 +1,7 @@
-# Cocktail Explorer (React)
+## Live Demo  
+[View Cocktail Explorer on Vercel](https://cocktail-explorer-react.vercel.app/)
+
+# Cocktail Explorer (React)  
 
 React JavaScript REST-API Bootstrap License
 
